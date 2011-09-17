@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Prototype_PRK.Site1" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="VistaBl/TabStrip.Office2010Black.css" rel="stylesheet" type="text/css" />
+        <link href="VistaB/TabStrip.Office2010Blue.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 100%">
+    <form id="form1" runat="server">
+    <%--<asp:ScriptManager ID="ScriptManager2" runat="server" />--%>
+    <telerik:RadScriptManager ID="RadScriptmanager1" runat="server"></telerik:RadScriptManager>
+    <div style="background-image: url(34570.jpg)">
+        <table width="100%" border="0">
+            <tr>
+                <td>
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td style="width: auto">
+                </td>
+                <td style="width: 900px; background-color: White">
+                    <asp:ImageButton ID="Image1" ImageUrl="~/Header.jpg" OnClick="Image1_click" runat="server" />
+                    <telerik:RadAjaxPanel ID="RadAjaxPanel1" runat="server" Width="100%">
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <asp:Label ID="lblwelcome" runat="server"></asp:Label>
+                                    <asp:Label ID="lblname" runat="server"></asp:Label>
+                                </td>
+                                <td>
+                                    <telerik:RadButton ID="radbuttonlogoff" Text="Log off" OnClick="radbuttonlogoff_click"
+                                        runat="server">
+                                    </telerik:RadButton>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <telerik:RadTabStrip ID="RadTabStrip1" OnTabClick="Radtab_click" runat="server" Skin="Office2010Blue">
+                                        <Tabs>
+                                            <telerik:RadTab runat="server" Text="About CSU-POM">
+                                                <Tabs>
+                                                    <telerik:RadTab runat="server" Text="Board Of Directors" Value="BoardOfDirectors.aspx">
+                                                    </telerik:RadTab>
+                                                    <telerik:RadTab runat="server" Text="Campus Coordinators" Value="CampusCoordinators.aspx">
+                                                    </telerik:RadTab>
+                                                </Tabs>
+                                            </telerik:RadTab>
+                                            <telerik:RadTab runat="server" Text="CSU-POM JOURNALS">
+                                                <Tabs>
+                                                    <telerik:RadTab runat="server" Text="California Journal of Operations Management">
+                                                    </telerik:RadTab>
+                                                    <telerik:RadTab runat="server" Text="Editorial Board">
+                                                    </telerik:RadTab>
+                                                    <telerik:RadTab runat="server" Text="Submission" Value="Submission.aspx">
+                                                    </telerik:RadTab>
+                                                    <telerik:RadTab runat="server" Text="Sample Journal Articles">
+                                                    </telerik:RadTab>
+                                                </Tabs>
+                                            </telerik:RadTab>
+                                            <telerik:RadTab runat="server" Text="CONFERENCE" Value="Conference.aspx">
+                                            </telerik:RadTab>
+                                            <telerik:RadTab runat="server" Text="PUBLICATIONS" Value="Publications.aspx">
+                                            </telerik:RadTab>
+                                            <telerik:RadTab runat="server" Text="CONTACT US" Value="Contactus.aspx">
+                                            </telerik:RadTab>
+                                        </Tabs>
+                                    </telerik:RadTabStrip>
+                                </td>
+                            </tr>
+                        </table>
+                    </telerik:RadAjaxPanel>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="width: auto">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

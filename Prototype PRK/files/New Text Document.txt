@@ -1,0 +1,17 @@
+<html>
+<head>
+	<style>
+	/* Using Embedded style   */
+		h2{
+			color:blue;
+			font-size:40pt;
+			letter-spacing :10pt;
+		}
+	</style>
+</head>
+<body>
+	<!-- Comments  : Using inline style 	-->
+
+	<h2 style="color:red;">Using Inline and Embedded</h2>
+</body>
+</html>
